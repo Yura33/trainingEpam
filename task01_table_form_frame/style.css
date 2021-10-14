@@ -93,6 +93,10 @@ img {
 
 /* header */
 
+.header {
+    box-shadow: 0 0 20px #b8b4b4;
+}
+
 .header__container {
     display: flex;
     justify-content: space-around;
@@ -178,13 +182,18 @@ img {
     padding: 50px;
     padding-bottom: 30px;
     color: #000;
-    background-color: #b18bf8;
 }
 
 /* home content */
 
+.home__content {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/background.jpg) no-repeat center / cover;
+}
+
 .home__description {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     text-transform: uppercase;
 }
 
@@ -198,7 +207,7 @@ img {
     margin: 15px;
     padding: 5px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #ffffffb0;
     text-align: center;
 }
 
@@ -208,17 +217,62 @@ img {
 }
 
 .home__link {
-    display: inline-block;
+    align-self: flex-end;
+    margin-bottom: 90px;
     padding: 18px 36px;
+}
+
+/* table content */
+
+.table {
+    background-color: #8c8cfa;
+}
+
+.table__description {
+    margin-bottom: 40px;
+}
+
+input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* switching table styles */
+
+input[id="radio-dark"]:checked ~ .table__wrapper,
+input[id="radio-dark"]:checked ~ .table__wrapper th,
+input[id="radio-dark"]:checked ~ .table__wrapper td {
+    border: 1px solid #000;
+    color: #000;
+}
+
+/* table */
+
+.table__wrapper {
+    width: 100%;
+    line-height: 2;
+    border-spacing: 0;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #fff;
 }
 
 /* about content */
 
-.content__about-text {
+.about__content {
+    background-color: #d3bbff;
+}
+
+.about__text {
     margin-bottom: 10px;
 }
 
-.content__about-text:last-of-type {
+.about__text:last-of-type {
     margin-bottom: 40px;
 }
 
@@ -279,12 +333,15 @@ textarea.feedback-form__input {
 
 /* footer */
 
+.footer {
+    background-color: #3333fb;
+}
+
 .footer__container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: #3333fb;
 }
 
 .footer__text {
