@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" vocab="https://schema.org/" typeof="Organization">
         <div class="container header__container">
             <!-- link to the home page -->
-            <a href="main.html" class="header__logo-link" title="link rental bike">
-                <img src="img/logo.png" alt="bike" class="header__logo-img">
+            <a href="main.html" class="header__logo-link" title="rental bike link" property="url">
+                <img src="img/logo.png" alt="bike" class="header__logo-img" property="logo">
             </a>
-            <h1 class="header__title">rental <span class="header__title-span">bike</span></h1>
+            <h1 class="header__title" property="name">rental <span class="header__title-span">bike</span></h1>
         </div>
     </header>
     <!-- main -->
@@ -23,25 +23,34 @@
         <div class="container main__container">
             <!-- main menu -->
             <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
+                <ul class="menu__list" vocab ="https://schema.org/" typeof ="BreadcrumbList">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the home page -->
-                        <a href="main.html" class="menu__link">home</a>
+                        <a href="main.html" class="menu__link" property="item" typeof="WebPage">
+                            <span property="name">home</span>
+                            <meta property="position" content="1">
+                        </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the the table page -->
-                        <a href="#" class="menu__link active">table</a>
+                        <a href="#" class="menu__link active" property="item" typeof="WebPage">
+                            <span property="name">table</span>
+                            <meta property="position" content="2">
+                        </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the about page -->
-                        <a href="about.html" class="menu__link">about</a>
+                        <a href="about.html" class="menu__link" property="item" typeof="WebPage">
+                            <span property="name">about</span>
+                            <meta property="position" content="3">
+                        </a>
                     </li>
                 </ul>
             </nav>
             <!-- table content -->
-            <section class="content table">
-                <h2 class="subtitle">table</h2>
-                <p class="table__description">Below you will find the price for our bike rental. With us, you receive fair value for money.</p>
+            <section class="content table" vocab="https://schema.org/" typeof="Table">
+                <h2 class="subtitle" property="about">table</h2>
+                <p class="table__description" property="abstract">Below you will find the price for our bike rental. With us, you receive fair value for money.</p>
                 <label for="radio-light">light style</label>
                 <input type="radio" id="radio-light" name="radio" checked>
                 <label for="radio-dark">dark style</label>
@@ -58,30 +67,30 @@
                             <th>PRICE</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>BMW</td>
-                            <td>blue</td>
-                            <td>21</td>
-                            <td>26</td>
-                            <td>14.5kg</td>
-                            <td>5$ for 1 day</td>
+                    <tbody vocab="https://schema.org/" typeof="ItemList">
+                        <tr property="itemListElement" typeof="Product">
+                            <td property="model">BMW</td>
+                            <td property="color">blue</td>
+                            <td property="additionalProperty">21</td>
+                            <td property="additionalProperty">26</td>
+                            <td property="additionalProperty">14.5kg</td>
+                            <td property="offers">5$ for 1 day</td>
                         </tr>
-                        <tr>
-                            <td>GESTALT G-555</td>
-                            <td>red</td>
-                            <td>24</td>
-                            <td>26</td>
-                            <td>18kg</td>
-                            <td>7$ for 1 day</td>
+                        <tr property="itemListElement" typeof="Product">
+                            <td property="model">GESTALT G-555</td>
+                            <td property="color">red</td>
+                            <td property="additionalProperty">24</td>
+                            <td property="additionalProperty">26</td>
+                            <td property="additionalProperty">18kg</td>
+                            <td property="offers">7$ for 1 day</td>
                         </tr>
-                        <tr>
-                            <td>GESTALT G-707</td>
-                            <td>green</td>
-                            <td>24</td>
-                            <td>26</td>
-                            <td>18kg</td>
-                            <td>7.5$ for 1 day</td>
+                        <tr property="itemListElement" typeof="Product">
+                            <td property="model">GESTALT G-707</td>
+                            <td property="color">green</td>
+                            <td property="additionalProperty">24</td>
+                            <td property="additionalProperty">26</td>
+                            <td property="additionalProperty">18kg</td>
+                            <td property="offers">7.5$ for 1 day</td>
                         </tr>
                     </tbody>
                 </table>
@@ -89,9 +98,9 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" vocab="https://schema.org/" typeof ="WPFooter">
         <div class="container footer__container">
-            <p class="footer__text">&copy; 14.10.2021 Kavaliou Yury</p>
+            <p class="footer__text" property="copyrightHolder">&copy; <time datetime="2021-10-14">14.10.2021</time> | Kavaliou Yury | v0.7a</p>
         </div>
     </footer>
 </body>

@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" vocab="https://schema.org/" typeof="Organization">
         <div class="container header__container">
             <!-- link to the home page -->
-            <a href="main.html" class="header__logo-link" title="link rental bike">
-                <img src="img/logo.png" alt="bike" class="header__logo-img">
+            <a href="main.html" class="header__logo-link" title="rental bike link" property="email">
+                <img src="img/logo.png" alt="bike" class="header__logo-img" property="logo">
             </a>
-            <h1 class="header__title">rental <span class="header__title-span">bike</span></h1>
+            <h1 class="header__title" property="name">rental <span class="header__title-span">bike</span></h1>
         </div>
     </header>
     <!-- main -->
@@ -23,18 +23,27 @@
         <div class="container main__container">
             <!-- main menu -->
             <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
+                <ul class="menu__list" vocab ="https://schema.org/" typeof ="BreadcrumbList">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the home page -->
-                        <a href="#" class="menu__link active">home</a>
+                        <a href="#" class="menu__link active" property="item" typeof="WebPage">
+                            <span property="name">home</span>
+                            <meta property="position" content="1">
+                        </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the the table page -->
-                        <a href="table.html" class="menu__link">table</a>
+                        <a href="table.html" class="menu__link" property="item" typeof="WebPage">
+                            <span property="name">table</span>
+                            <meta property="position" content="2">
+                        </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item" property="itemListElement" typeof="ListItem">
                         <!-- link to the about page -->
-                        <a href="about.html" class="menu__link">about</a>
+                        <a href="about.html" class="menu__link" property="item" typeof="WebPage">
+                            <span property="name">about</span>
+                            <meta property="position" content="3">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -63,9 +72,9 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" vocab="https://schema.org/" typeof ="WPFooter">
         <div class="container footer__container">
-            <p class="footer__text">&copy; 14.10.2021 Kavaliou Yury</p>
+            <p class="footer__text" property="copyrightHolder">&copy; <time datetime="2021-10-14">14.10.2021</time> | Kavaliou Yury | v0.7a</p>
         </div>
     </footer>
 </body>
