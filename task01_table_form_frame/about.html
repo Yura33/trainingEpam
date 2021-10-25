@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Bike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="container header__container">
+            <!-- link to the home page -->
+            <a href="main.html" class="header__logo-link">
+                <img src="img/logo.png" alt="bike" class="header__logo-img">
+            </a>
+            <h1 class="header__title">rental <span class="header__title-span">bike</span></h1>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="container main__container">
+            <!-- main menu -->
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <!-- link to the home page -->
+                        <a href="main.html" class="menu__link">home</a>
+                    </li>
+                    <li class="menu__item">
+                        <!-- link to the the table page -->
+                        <a href="table.html" class="menu__link">table</a>
+                    </li>
+                    <li class="menu__item">
+                        <!-- link to the about page -->
+                        <a href="about.html" class="menu__link active">about</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- about content -->
+            <div class="content about__content">
+                <h2 class="subtitle">about</h2>
+                <p class="about__text">The Rental Bike company operates in the Belarusian bicycle rental market.</p>
+                <p class="about__text">We provide the opportunity to move freely, offering the lowest prices for rental bicycles and electric scooters in Belarus.</p>
+                <p class="about__text">By organizing a high-quality bicycle and electric scooter rental service in Minsk, we give you real impressions and freedom, the opportunity to visit amazing places and make new, incredible discoveries.</p>
+                <p class="about__text">By renting a bicycle or electric scooter from us, you will discover new horizons, allowing you to make the most ordinary day bright and unforgettable.</p>
+                <p class="about__text">Success is determined by the flexibility of conditions, a wide range of services, the quality of bicycles, impeccable customer service and, of course, a carefully thought-out development strategy.</p>
+                <p class="about__text">Our main goal is long-term relationships with customers. We strive for a civilized market and see our task in making the service of high-quality for the future accessible, convenient and simple procedure, with minimal risks.</p>
+                <p class="about__text">The principle of operation – customer safety - is above all.</p>
+                <form action="#" class="feedback-form">
+                    <h3 class="feedback-form__title">Any other questions? Send a request and we will contact you!</h3>
+                    <!-- feedback form -->
+                    <div class="feedback-form__wrapper">
+                        <div class="feedback-form__group">
+                            <!-- user name -->
+                            <label for="name" class="feedback-form__label">Name</label>
+                            <input type="text" id="name" class="feedback-form__input">
+                        </div>
+                        <div class="feedback-form__group">
+                            <!-- user email -->
+                            <label for="email" class="feedback-form__label">Email</label>
+                            <input type="email" id="email" class="feedback-form__input">
+                        </div>
+                        <div class="feedback-form__group">
+                            <!-- user's message -->
+                            <label for="message" class="feedback-form__label">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="3" class="feedback-form__input"></textarea>
+                        </div>
+                        <div class="feedback-form__group">
+                            <!-- button to send the form to the server -->
+                            <button type="submit" class="btn feedback-form__submit">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container footer__container">
+            <p class="footer__text">&copy; 14.10.2021 Kavaliou Yury</p>
+        </div>
+    </div>
+</body>
+</html>
