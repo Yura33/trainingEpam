@@ -9,87 +9,86 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header" vocab="https://schema.org/" typeof="Organization" role="banner">
+    <header class="header" vocab="https://schema.org/" typeof="Organization">
         <div class="container header__container">
             <!-- link to the home page -->
-            <a href="main.html" class="header__logo-link" title="rental bike link" property="email">
+            <a href="main.html" class="header__logo-link" title="rental bike link" property="url">
                 <img src="img/logo.png" alt="bike" class="header__logo-img" property="logo">
             </a>
             <h1 class="header__title" property="name">rental <span class="header__title-span">bike</span></h1>
         </div>
     </header>
+    <!-- main menu -->
+    <nav class="menu">
+        <ul class="menu__list" vocab ="https://schema.org/" typeof ="BreadcrumbList">
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the home page -->
+                <a href="main.html" class="menu__link" property="item">
+                    <span property="name">home</span>
+                    <meta property="position" content="1">
+                </a>
+            </li>
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the the table page -->
+                <a href="table.html" class="menu__link" property="item">
+                    <span property="name">table</span>
+                    <meta property="position" content="2">
+                </a>
+            </li>
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the about page -->
+                <a href="#" class="menu__link active" property="item">
+                    <span property="name">about</span>
+                    <meta property="position" content="3">
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!-- main -->
-    <main class="main" role="main">
-        <div class="container main__container">
-            <!-- main menu -->
-            <nav class="menu" role="navigation">
-                <ul class="menu__list" vocab ="https://schema.org/" typeof ="BreadcrumbList">
-                    <li class="menu__item" property="itemListElement" typeof="ListItem">
-                        <!-- link to the home page -->
-                        <a href="main.html" class="menu__link" property="item">
-                            <span property="name">home</span>
-                            <meta property="position" content="1">
-                        </a>
-                    </li>
-                    <li class="menu__item" property="itemListElement" typeof="ListItem">
-                        <!-- link to the the table page -->
-                        <a href="table.html" class="menu__link" property="item">
-                            <span property="name">table</span>
-                            <meta property="position" content="2">
-                        </a>
-                    </li>
-                    <li class="menu__item" property="itemListElement" typeof="ListItem">
-                        <!-- link to the about page -->
-                        <a href="#" class="menu__link active" property="item">
-                            <span property="name">about</span>
-                            <meta property="position" content="3">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- about content -->
-            <section class="content about__content" vocab ="https://schema.org/" typeof ="AboutPage">
-                <h2 class="subtitle" property="headline">about</h2>
-                <p class="about__text" property="text">The Rental Bike company operates in the Belarusian bicycle rental market.</p>
-                <p class="about__text" property="text">We provide the opportunity to move freely, offering the lowest prices for rental bicycles and electric scooters in Belarus.</p>
-                <p class="about__text" property="text">By organizing a high-quality bicycle and electric scooter rental service in Minsk, we give you real impressions and freedom, the opportunity to visit amazing places and make new, incredible discoveries.</p>
-                <p class="about__text" property="text">By renting a bicycle or electric scooter from us, you will discover new horizons, allowing you to make the most ordinary day bright and unforgettable.</p>
-                <p class="about__text" property="text">Success is determined by the flexibility of conditions, a wide range of services, the quality of bicycles, impeccable customer service and, of course, a carefully thought-out development strategy.</p>
-                <p class="about__text" property="text">Our main goal is long-term relationships with customers. We strive for a civilized market and see our task in making the service of high-quality for the future accessible, convenient and simple procedure, with minimal risks.</p>
-                <p class="about__text" property="text">The principle of operation – customer safety - is above all.</p>
-                <form action="#" class="feedback-form" property="specialty" vocab ="https://schema.org/" typeof ="Message">
-                    <h3 class="feedback-form__title" property="about">Any other questions? Send a request and we will contact you!</h3>
-                    <!-- feedback form -->
-                    <div class="feedback-form__wrapper">
-                        <div class="feedback-form__group">
-                            <!-- user name -->
-                            <label for="name" class="feedback-form__label">Name</label>
-                            <input type="text" id="name" class="feedback-form__input" property="sender" typeof="Person">
-                        </div>
-                        <div class="feedback-form__group">
-                            <!-- user email -->
-                            <label for="email" class="feedback-form__label">Email</label>
-                            <input type="email" id="email" class="feedback-form__input" property="recipient" typeof="Person">
-                        </div>
-                        <div class="feedback-form__group">
-                            <!-- user's message -->
-                            <label for="message" class="feedback-form__label">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="3" class="feedback-form__input" property="comment" typeof="Comment"></textarea>
-                        </div>
-                        <div class="feedback-form__group">
-                            <!-- button to send the form to the server -->
-                            <button type="submit" class="btn feedback-form__submit" property="potentialAction">submit</button>
-                        </div>
+    <main class="main">
+        <!-- about content -->
+        <section class="container content about__content" vocab ="https://schema.org/" typeof ="AboutPage">
+            <h2 class="subtitle" property="headline">about</h2>
+            <p class="about__text" property="text">The Rental Bike company operates in the Belarusian bicycle rental market.</p>
+            <p class="about__text" property="text">We provide the opportunity to move freely, offering the lowest prices for rental bicycles and electric scooters in Belarus.</p>
+            <p class="about__text" property="text">By organizing a high-quality bicycle and electric scooter rental service in Minsk, we give you real impressions and freedom, the opportunity to visit amazing places and make new, incredible discoveries.</p>
+            <p class="about__text" property="text">By renting a bicycle or electric scooter from us, you will discover new horizons, allowing you to make the most ordinary day bright and unforgettable.</p>
+            <p class="about__text" property="text">Success is determined by the flexibility of conditions, a wide range of services, the quality of bicycles, impeccable customer service and, of course, a carefully thought-out development strategy.</p>
+            <p class="about__text" property="text">Our main goal is long-term relationships with customers. We strive for a civilized market and see our task in making the service of high-quality for the future accessible, convenient and simple procedure, with minimal risks.</p>
+            <p class="about__text" property="text">The principle of operation – customer safety - is above all.</p>
+            <!-- feedback form -->
+            <form action="#" class="feedback-form" vocab ="https://schema.org/" typeof ="Message">
+                <h3 class="feedback-form__title" property="about">Any other questions? Send a request and we will contact you!</h3>
+                <div class="feedback-form__wrapper">
+                    <div class="feedback-form__group">
+                        <!-- user name -->
+                        <label for="name" class="feedback-form__label">Name</label>
+                        <input type="text" id="name" class="feedback-form__input" property="sender" typeof="Person">
                     </div>
-                </form>
-            </section>
-        </div>
+                    <div class="feedback-form__group">
+                        <!-- user email -->
+                        <label for="email" class="feedback-form__label">Email</label>
+                        <input type="email" id="email" class="feedback-form__input" property="recipient" typeof="Person">
+                    </div>
+                    <div class="feedback-form__group">
+                        <!-- user's message -->
+                        <label for="message" class="feedback-form__label">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="3" class="feedback-form__input" property="comment" typeof="Comment"></textarea>
+                    </div>
+                    <div class="feedback-form__group">
+                        <!-- button to send the form to the server -->
+                        <button type="submit" class="btn feedback-form__submit" property="potentialAction">submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
     <!-- footer -->
     <footer class="footer" vocab="https://schema.org/" typeof ="WPFooter">
-        <div class="container footer__container">
-            <p class="footer__text" property="copyrightHolder">&copy; <time datetime="2021-10-14">14.10.2021</time> | Kavaliou Yury | v0.7a</p>
+        <div class="container">
+            <p class="footer__text" property="copyrightHolder">&copy; <span class="footer__date"></span> | Kavaliou Yury | v0.8a</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
