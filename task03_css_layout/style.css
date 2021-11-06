@@ -50,6 +50,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 li {
@@ -83,7 +84,9 @@ img {
     text-transform: uppercase;
     color: #fff;
     background-color: #2f2ff0;
-    transition: background-color .3s ease-in;
+    transition-property: color, background-color;
+    transition-duration: .3s;
+    transition-timing-function: linear;
     cursor: pointer;
 }
 
@@ -98,6 +101,7 @@ img {
 }
 
 .header__container {
+    display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     -ms-grid-rows: 100px;
@@ -129,6 +133,7 @@ img {
 .menu {
     position: sticky;
     top: 0;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
     z-index: 1;
@@ -137,6 +142,7 @@ img {
 .menu__list {
     -ms-grid-row-span: 2;
     grid-column: 2;
+    display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 80px;
@@ -153,7 +159,7 @@ img {
     color: #fff;
     letter-spacing: 4px;
     text-transform: uppercase;
-    transition: opacity .2s ease-in;
+    transition: opacity .2s linear;
 }
 
 .menu__link.active::after {
@@ -170,12 +176,17 @@ img {
     opacity: .5;
 }
 
+/* main */
+
+.main {    
+    min-height: calc(100vh - 230px);
+}
+
 /* main content */
 
 .content {
     padding-top: 40px;
     padding-bottom: 40px;
-    min-height: calc(100vh - 230px);
     color: #000;
 }
 
@@ -191,13 +202,18 @@ img {
     width: 60%;
     margin-right: 23px;
     margin-bottom: 35px;
+    font-size: 18px;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .home__list {
     clear: both;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .home__item {
@@ -208,7 +224,8 @@ img {
     text-align: center;
 }
 
-.home__item-title {
+.home__item-title, .news__item-title {
+    font-size: 18px;
     font-weight: 600;
     color: #b501b5;
 }
@@ -218,9 +235,61 @@ img {
     padding: 18px 36px;
 }
 
+/* news */
+
+.news__container {
+    min-height: calc(100vh - 421px - 230px);
+    background-color: #eee;
+}
+
+.news__list {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.news__item {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    margin: 8px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.news__item-img {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.news__item-title {
+    margin-bottom: 7px;
+}
+
+.news__description {
+    margin-bottom: 7px;
+}
+
+.news__link {
+    justify-self: end;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #2f2ff0;
+    background-color: #fff;
+}
+
+.news__link:hover {
+    color: #fff;
+}
+
 /* table content */
 
 .table {
+    min-height: inherit;
     background-color: #8c8cfa;
 }
 
@@ -261,6 +330,7 @@ th, td {
 /* about content */
 
 .about__content {
+    min-height: inherit;
     background-color: #d3bbff;
 }
 
@@ -275,6 +345,7 @@ th, td {
 /* feedback form */
 
 .feedback-form__inner {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 47% 47%;
     grid-template-rows: .8fr 100px;
@@ -337,6 +408,12 @@ textarea.feedback-form__input {
     letter-spacing: 2px;
 }
 
+@media (max-width: 1199px) {
+    .news__list {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
 @media (max-width: 767px) {
     .container {
         padding-right: calc(15px + (50 - 15) * ((100vw - 320px) / (767 - 320)));
@@ -354,6 +431,8 @@ textarea.feedback-form__input {
 @media (max-width: 575px) {
     .home__list {
         grid-template-columns: 1fr;
+        margin-right: 0;
+        margin-left: 0;
     }
     .home__item {
         margin-right: 0;
@@ -362,6 +441,9 @@ textarea.feedback-form__input {
     .menu__link {
         font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (575 - 320)));
     }
+    .news__list {
+        grid-template-columns: 1fr;
+    }    
     .table__cell-hidden {
         display: none;
     }
