@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<article class="calc">
+		<div class="calc__output">
+			<div class="arithmetic-expression"></div>
+			<div class="current-operand">0</div>
+		</div>
+		<div class="calc__switch">
+			<label>
+				real
+				<input type="radio" name="radio" id="real" checked>
+			</label>
+			<label>
+				integers
+				<input type="radio" name="radio" id="integers">
+			</label>
+			<label>
+				priority
+				<input type="checkbox" name="priority" id="priority" checked>
+			</label>
+		</div>
+		<div class="calc__buttons">
+
+			<button type="button" class="btn clear">&#9003;</button>
+			<button type="button" class="btn clear">c</button>
+			<button type="button" class="btn memory">m</button>
+			<button type="button" class="btn operator">/</button>
+
+			<button type="button" class="btn number">7</button>
+			<button type="button" class="btn number">8</button>
+			<button type="button" class="btn number">9</button>
+			<button type="button" class="btn operator">*</button>
+
+			<button type="button" class="btn number">4</button>
+			<button type="button" class="btn number">5</button>
+			<button type="button" class="btn number">6</button>
+			<button type="button" class="btn operator">-</button>
+
+			<button type="button" class="btn number">1</button>
+			<button type="button" class="btn number">2</button>
+			<button type="button" class="btn number">3</button>
+			<button type="button" class="btn operator">+</button>
+
+			<button type="button" class="btn number btn-big">0</button>
+			<button type="button" class="btn number">.</button>
+			<button type="button" class="btn equals">=</button>
+
+		</div>
+	</article>
+	<script src="./main.js"></script>
+</body>
+
+</html>
