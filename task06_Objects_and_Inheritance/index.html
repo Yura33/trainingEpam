@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza constructor</title>
+  <link rel="stylesheet" href="slyle.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Конструктор пиццы</h1>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container content__container">
+      <div class="content__constructor-wrapper">
+        <div class="current-pizza">
+          <div class="current-pizza-item dough"></div>
+          <div class="current-pizza-item tomato"></div>
+          <div class="current-pizza-item garlic"></div>
+          <div class="current-pizza-item cheese"></div>
+          <div class="current-pizza-item caesar"></div>
+          <div class="current-pizza-item bacon"></div>
+          <div class="current-pizza-item ham"></div>
+          <div class="current-pizza-item salami"></div>
+          <div class="current-pizza-item chicken"></div>
+          <div class="current-pizza-item olive"></div>
+          <div class="current-pizza-item black-olive"></div>
+          <div class="current-pizza-item fresh-tomato"></div>
+          <div class="current-pizza-item pineapple"></div>
+          <div class="current-pizza-item bulgarian-pepper"></div>
+          <div class="current-pizza-item pickled-cucumber"></div>
+          <div class="current-pizza-item jalapeno-pepper"></div>
+          <div class="current-pizza-item champignons"></div>
+        </div>
+        <div class="content__constructor-result-all">
+          <p>Ваш заказ: <span class="total-order">тесто тонкое</span></p>
+          <p>Вес: <span class="total-weight">300 г.</span></p>
+          <p>Калорийность: <span class="total-caloric-content">702 Ккал</span></p>
+          <p>Цена: <span class="total-amount">5.52 руб</span></p>
+        </div>
+      </div>
+      <form class="content__creator-pizza form">
+        <fieldset class="form__fieldset">
+          <h2 class="subtitle">Основание</h2>
+          <div class="form__inner-label-base">
+            <label class="select-label">
+              Тесто
+              <select name="select-dough">
+                <option value="тонкое">тонкое</option>
+                <option value="толстое">толстое</option>
+                <option value="слоёное">слоёное</option>
+              </select>
+            </label>
+            <label class="select-label">
+              Размер
+              <select name="select-dough">
+                <option value="25 см">25 см</option>
+                <option value="30 см">30 см</option>
+                <option value="35 см">35 см</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <h2 class="subtitle">Соус</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/tomato-sauce.png" alt="Соус томатный">
+                <h3 class="form__card-title">Томатный</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">50г. <span class="price">&#47; 2.10 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/garlic.png" alt="Соус чесночный">
+                <h3 class="form__card-title">Чесночный</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">40г. <span class="price">&#47; 2.10 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/cheese.png" alt="Соус сырный">
+                <h3 class="form__card-title">Сырный</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">40г. <span class="price">&#47; 2.10 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/caesar.png" alt="Соус Цезарь">
+                <h3 class="form__card-title">Цезарь</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 2.10 руб</span></span>
+              </article>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <h2 class="subtitle">Мясо</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/bacon.png" alt="Бекон">
+                <h3 class="form__card-title">Бекон</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">60г. <span class="price">&#47; 5.45 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/ham.png" alt="Ветчина">
+                <h3 class="form__card-title">Ветчина</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">50г. <span class="price">&#47; 3.80 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/salami.png" alt="Салями">
+                <h3 class="form__card-title">Салями</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">50г. <span class="price">&#47; 3.80 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/chicken.png" alt="Курица">
+                <h3 class="form__card-title">Курица</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">50г. <span class="price">&#47; 3.80 руб</span></span>
+              </article>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <h2 class="subtitle">Овощи и грибы</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/olive.png" alt="Оливки">
+                <h3 class="form__card-title">Оливки</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 1.40 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/black-olives.png" alt="Маслины">
+                <h3 class="form__card-title">Маслины</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 1.40 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/fresh-tomato.png" alt="Томаты свежие">
+                <h3 class="form__card-title">Томаты свежие</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">50г. <span class="price">&#47; 1.70 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/pineapple.png" alt="Анонасы">
+                <h3 class="form__card-title">Анонасы</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">80г. <span class="price">&#47; 3.80 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/bulgarian-pepper.png" alt="Перец болгарский">
+                <h3 class="form__card-title">Перец болгарский</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 2.40 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/pickled-cucumbers.png" alt="Маринованные огурчики">
+                <h3 class="form__card-title">Огурчики</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">40г. <span class="price">&#47; 2.05 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/jalapeno-pepper.png" alt="Перец халапеньо">
+                <h3 class="form__card-title">Перец халапеньо</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 2.05 руб</span></span>
+              </article>
+            </li>
+            <li class="form__item">
+              <article class="form__card">
+                <img class="form__card-img" src="img/ingredients/champignons.png" alt="Шампиньоны">
+                <h3 class="form__card-title">Шампиньоны</h3>
+                <label>
+                  <input type="checkbox">
+                </label>
+                <span class="checkmark"></span>
+                <span class="weight">30г. <span class="price">&#47; 2.10 руб</span></span>
+              </article>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn-submit" type="submit">Оформить заказ</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
