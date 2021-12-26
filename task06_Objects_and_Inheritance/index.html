@@ -15,8 +15,22 @@
       <h1 class="title">Конструктор пиццы</h1>
     </div>
   </header>
-  <main class="content">
-    <div class="container content__container">
+  <main>
+    <section class="promotion">
+      <div class="container">
+        <div class="promotion__container">
+          <h2 class="subtitle promotion__subtitle">Новогодняя акция!!!</h2>
+          <p class="promotion__description">При заказе с 15.12.2021г. по 15.01.2022г. скидки при заказе пиццы на сумму:
+          </p>
+          <ul class="promotion__list">
+            <li class="promotion__item">от 25 руб до 30 руб <span class="promotion__discount">-10%</span></li>
+            <li class="promotion__item">от 30 руб до 35 руб <span class="promotion__discount">-15%</span></li>
+            <li class="promotion__item">свыше 35 руб <span class="promotion__discount">-20%</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container content__container">
       <div class="content__constructor-wrapper">
         <div class="current-pizza">
           <div class="current-pizza-item dough"></div>
@@ -50,7 +64,7 @@
         </div>
       </div>
       <form class="content__creator-pizza form">
-        <fieldset class="form__fieldset">
+        <section class="form__fieldset">
           <h2 class="subtitle">Тесто</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -78,8 +92,8 @@
               </article>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </section>
+        <section class="form__fieldset">
           <h2 class="subtitle">Размер основы</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -88,7 +102,7 @@
                 <h3 class="form__card-title">Детская 25 см</h3>
                 <div class="form__top-layer" data-name="25 см"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">250г. &#47;<span class="price"> 4.70 руб</span></span>
+                <span class="weight" data-value="720">250г. &#47;<span class="price"> 4.70 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -97,7 +111,7 @@
                 <h3 class="form__card-title">Средняя 30 см</h3>
                 <div class="form__top-layer" data-name="30 см"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">300г. &#47;<span class="price"> 5.20 руб</span></span>
+                <span class="weight" data-value="860">300г. &#47;<span class="price"> 5.20 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -106,12 +120,12 @@
                 <h3 class="form__card-title">Большая 35 см</h3>
                 <div class="form__top-layer" data-name="35 см"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">350г. &#47;<span class="price"> 5.70 руб</span></span>
+                <span class="weight" data-value="1100">350г. &#47;<span class="price"> 5.70 руб</span></span>
               </article>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </section>
+        <section class="form__fieldset">
           <h2 class="subtitle">Соус</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -120,7 +134,7 @@
                 <h3 class="form__card-title">Томатный</h3>
                 <div class="form__top-layer" data-name="соус томатный"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">50г. &#47;<span class="price"> 1.70 руб</span></span>
+                <span class="weight" data-value="40">50г. &#47;<span class="price"> 1.70 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -129,7 +143,7 @@
                 <h3 class="form__card-title">Чесночный</h3>
                 <div class="form__top-layer" data-name="соус чесночный"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">40г. &#47;<span class="price"> 1.70 руб</span></span>
+                <span class="weight" data-value="134">40г. &#47;<span class="price"> 1.70 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -138,7 +152,7 @@
                 <h3 class="form__card-title">Сырный</h3>
                 <div class="form__top-layer" data-name="соус сырный"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">40г. &#47;<span class="price"> 1.70 руб</span></span>
+                <span class="weight" data-value="127">40г. &#47;<span class="price"> 1.70 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -147,12 +161,12 @@
                 <h3 class="form__card-title">Цезарь</h3>
                 <div class="form__top-layer" data-name="соус Цезарь"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 1.70 руб</span></span>
+                <span class="weight" data-value="95">30г. &#47;<span class="price"> 1.70 руб</span></span>
               </article>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </section>
+        <section class="form__fieldset">
           <h2 class="subtitle">Мясо</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -161,7 +175,7 @@
                 <h3 class="form__card-title">Бекон</h3>
                 <div class="form__top-layer" data-name="бекон"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">60г. &#47;<span class="price"> 5 руб</span></span>
+                <span class="weight" data-value="300">60г. &#47;<span class="price"> 5 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -170,7 +184,7 @@
                 <h3 class="form__card-title">Ветчина</h3>
                 <div class="form__top-layer" data-name="ветчина"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">50г. &#47;<span class="price"> 3 руб</span></span>
+                <span class="weight" data-value="135">50г. &#47;<span class="price"> 3 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -179,7 +193,7 @@
                 <h3 class="form__card-title">Салями</h3>
                 <div class="form__top-layer" data-name="салями"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">50г. &#47;<span class="price"> 3 руб</span></span>
+                <span class="weight" data-value="284">50г. &#47;<span class="price"> 3 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -188,12 +202,12 @@
                 <h3 class="form__card-title">Курица</h3>
                 <div class="form__top-layer" data-name="курица"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">50г. &#47;<span class="price"> 3 руб</span></span>
+                <span class="weight" data-value="55">50г. &#47;<span class="price"> 3 руб</span></span>
               </article>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
+        </section>
+        <section class="form__fieldset">
           <h2 class="subtitle">Овощи и грибы</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -202,7 +216,7 @@
                 <h3 class="form__card-title">Оливки</h3>
                 <div class="form__top-layer" data-name="оливки"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 1 руб</span></span>
+                <span class="weight" data-value="34">30г. &#47;<span class="price"> 1 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -211,7 +225,7 @@
                 <h3 class="form__card-title">Маслины</h3>
                 <div class="form__top-layer" data-name="маслины"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 1 руб</span></span>
+                <span class="weight" data-value="49">30г. &#47;<span class="price"> 1 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -220,7 +234,7 @@
                 <h3 class="form__card-title">Томаты свежие</h3>
                 <div class="form__top-layer" data-name="томаты свежие"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">50г. &#47;<span class="price"> 1.70 руб</span></span>
+                <span class="weight" data-value="10">50г. &#47;<span class="price"> 1.70 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -229,7 +243,7 @@
                 <h3 class="form__card-title">Анонасы</h3>
                 <div class="form__top-layer" data-name="анонасы"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">80г. &#47;<span class="price"> 3 руб</span></span>
+                <span class="weight" data-value="39">80г. &#47;<span class="price"> 3 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -238,7 +252,7 @@
                 <h3 class="form__card-title">Перец болгарский</h3>
                 <div class="form__top-layer" data-name="перец болгарский"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 2 руб</span></span>
+                <span class="weight" data-value="10">30г. &#47;<span class="price"> 2 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -247,7 +261,7 @@
                 <h3 class="form__card-title">Огурчики</h3>
                 <div class="form__top-layer" data-name="маринованные огурчики"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">40г. &#47;<span class="price"> 1.90 руб</span></span>
+                <span class="weight" data-value="7">40г. &#47;<span class="price"> 1.90 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -256,7 +270,7 @@
                 <h3 class="form__card-title">Перец халапеньо</h3>
                 <div class="form__top-layer" data-name="перец халапеньо"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 1.90 руб</span></span>
+                <span class="weight" data-value="9">30г. &#47;<span class="price"> 1.90 руб</span></span>
               </article>
             </li>
             <li class="form__item">
@@ -265,14 +279,20 @@
                 <h3 class="form__card-title">Шампиньоны</h3>
                 <div class="form__top-layer" data-name="шампиньоны"></div>
                 <span class="checkmark"></span>
-                <span class="weight" data-value="150">30г. &#47;<span class="price"> 1.30 руб</span></span>
+                <span class="weight" data-value="8">30г. &#47;<span class="price"> 1.30 руб</span></span>
               </article>
             </li>
           </ul>
-        </fieldset>
-        <button class="btn-submit" type="submit">Оформить заказ</button>
+        </section>
+        <button class="form__btn-submit" type="submit">Оформить заказ</button>
       </form>
-    </div>
+    </section>
+    <section class="modal-window none">
+      <div class="modal-window__content">
+        <p class="modal-window__description"></p>
+        <button class="modal-window__btn">ok</button>
+      </div>
+    </section>
   </main>
   <script src="./main.js"></script>
 </body>

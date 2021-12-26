@@ -20,15 +20,20 @@ ul {
   padding-left: 20px;
 }
 
+.none {
+  display: none;
+}
+
 .header {
-  padding-top: 30px;
+  margin: 40px 0;
 }
 
 .title {
-  padding: 10px 0;
+  padding: 18px 0;
   text-align: center;
-  line-height: 1;
   border-radius: 8px;
+  font-size: 48px;
+  line-height: 1;
   background-color: rgb(0, 0, 0, 0.7);
   color: #fff;
 }
@@ -38,21 +43,61 @@ ul {
   color: #fff;
 }
 
+.promotion {
+  margin-bottom: 30px;
+}
+
+.promotion__container {
+  padding: 25px 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.promotion__subtitle {
+  margin-bottom: 15px;
+  padding-left: 50px;
+  font-size: 38px;
+}
+
+.promotion__description {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.promotion__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.promotion__item {
+  margin: 10px 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.promotion__discount {
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+}
+
 .content__container {
   position: relative;
-  padding-top: 30px;
+  display: flex;
 }
 
 .content__constructor-wrapper {
-  position: fixed;
-  top: 95px;
+  position: sticky;
+  top: 25px;
+  align-self: flex-start;
 }
 
 .current-pizza {
   position: relative;
-  margin: 0 auto;
-  width: 340px;
-  height: 340px;
+  height: 370px;
 }
 
 .current-pizza-item {
@@ -142,7 +187,7 @@ ul {
 
 .content__constructor-result-all {
   margin-top: 10px;
-  padding: 15px;
+  padding: 8px;
   width: 375px;
   border-radius: 7px;
   font-weight: 600;
@@ -157,7 +202,7 @@ ul {
 
 .content__creator-pizza {
   margin-bottom: 30px;
-  padding-left: 400px;
+  margin-left: 25px;
 }
 
 .form__fieldset {
@@ -225,7 +270,7 @@ ul {
 
 .form__top-layer.active {
   box-shadow: 0px 0px 16px #fff;
-  border: 4px solid green;
+  border: 4px solid rgb(0, 128, 0);
 }
 
 .checkmark {
@@ -244,7 +289,7 @@ ul {
   display: none;
   line-height: 1;
   font-size: 28px;
-  color: green;
+  color: rgb(0, 128, 0);
 }
 
 .form__top-layer.active ~ .checkmark::after {
@@ -255,7 +300,7 @@ ul {
   font-weight: 700;
 }
 
-.btn-submit {
+.form__btn-submit {
   padding: 15px 30px;
   margin-left: auto;
   display: block;
@@ -264,16 +309,84 @@ ul {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #038a03;
+  background-color: rgb(0, 128, 0);
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s linear;
 }
 
-.btn-submit:hover {
-  background-color: #02a702;
+.form__btn-submit:hover {
+  background-color: rgb(0, 156, 0);
 }
 
-.btn-submit:active {
-  background-color: #02a702ab;
+.form__btn-submit:active {
+  background-color: rgba(1, 172, 1, 0.7);
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.modal-window__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 35px 20px 20px;
+  width: 320px;
+  height: 170px;
+  border: 2px solid rgb(0, 128, 0);
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 15px rgba(250, 250, 250, 0.2);
+}
+
+.modal-window__content.error {
+  border-color: rgb(171, 35, 25);
+}
+
+.modal-window__description {
+  margin-bottom: 20px;
+}
+
+.modal-window__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+}
+
+.modal-window__btn:hover {
+  background-color: rgb(0, 128, 0, 0.8);
+}
+
+.modal-window__btn:active {
+  background-color: rgb(0, 128, 0, 0.9);
+}
+
+.modal-window__btn.error {
+  background-color: rgb(171, 35, 25);
+}
+
+.modal-window__btn.error:hover {
+  background-color: rgba(171, 35, 25, 0.8);
+}
+
+.modal-window__btn.error:active {
+  background-color: rgba(171, 35, 25, 0.9);
 }
