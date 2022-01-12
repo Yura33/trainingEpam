@@ -61,3 +61,7 @@ input:not(.important) {
 .card__item .num {
   width: 40px;
 }
+
+.invalid {
+  background: rgb(199, 58, 81);
+}
