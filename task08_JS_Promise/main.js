@@ -55,7 +55,7 @@ class TodoItem {
         headers: {
         'Content-type': 'application/json; charset=UTF-8',
         'Allow': 'PUT',
-        'Access-Control-Allow-Methods': 'PUT',
+        'Access-Control-Allow-Origin': '*',
         }
       });
     }
@@ -79,11 +79,11 @@ function showTodoItem(arrElements, jsonObj) {
 
 getData(arrUrl);
 
-setTimeout(() => showTodoItem(arrCardItem1, arrJson[0]), 1000);
-setTimeout(() => showTodoItem(arrCardItem2, arrJson[1]), 2000);
-setTimeout(() => showTodoItem(arrCardItem3, arrJson[2]), 3000);
+setInterval(() => showTodoItem(arrCardItem1, arrJson[0]), 1000);
+setInterval(() => showTodoItem(arrCardItem2, arrJson[1]), 2000);
+setInterval(() => showTodoItem(arrCardItem3, arrJson[2]), 3000);
 
-// setInterval(() => getData(arrUrl), 3000);
+setInterval(() => getData(arrUrl), 3000);
 
 submit.addEventListener('click', (e) => {
   const todoItem = new TodoItem(inputDate, inputTime, inputName, inputImportant, inputNote);
