@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax and Promise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="todo">
+    <h1 class="todo__title">My todo list</h1>
+    <ul class="todo__list">
+
+      <li class="todo__item">
+        <h2 class="subtitle">The first task</h2>
+        <ul class="card card-1">
+          <li class="card__item">date: <span class="date"></span></li>
+          <li class="card__item">time: <span class="time"></span></li>
+          <li class="card__item">name: <span class="name"></span></li>
+          <li class="card__item">important: <span class="important"></span></li>
+          <li class="card__item">note: <span class="note"></span></li>
+        </ul>
+      </li>
+
+      <li class="todo__item">
+        <h2 class="subtitle">The second task</h2>
+        <ul class="card card-2">
+          <li class="card__item">date: <span class="date"></span></li>
+          <li class="card__item">time: <span class="time"></span></li>
+          <li class="card__item">name: <span class="name"></span></li>
+          <li class="card__item">important: <span class="important"></span></li>
+          <li class="card__item">note: <span class="note"></span></li>
+        </ul>
+      </li>
+
+      <li class="todo__item">
+        <h2 class="subtitle">The third task</h2>
+        <ul class="card card-3">
+          <li class="card__item">date: <span class="date"></span></li>
+          <li class="card__item">time: <span class="time"></span></li>
+          <li class="card__item">name: <span class="name"></span></li>
+          <li class="card__item">important: <span class="important"></span></li>
+          <li class="card__item">note: <span class="note"></span></li>
+        </ul>
+      </li>
+
+      <li class="todo__item">
+        <h2 class="subtitle">Execution status</h2>
+        <ul class="card card-4">
+          <li class="card__item">the first task: <span class="status"></span></li>
+          <li class="card__item">the second task: <span class="status"></span></li>
+          <li class="card__item">the third task: <span class="status"></span></li>
+        </ul>
+      </li>
+
+      <li class="todo__item">
+        <h2 class="subtitle">Change task</h2>
+        <form id="form">
+          <ul class="card card-5">
+            <li class="card__item">number task:
+              <input class="num" type="number" name="num" min="1" max="3" value="1">
+            </li>
+            <li class="card__item">date:
+              <input class="date" type="date" name="date">
+            </li>
+            <li class="card__item">time:
+              <input class="time" type="time" name="time">
+            </li>
+            <li class="card__item">name:
+              <input class="name" type="text" name="name">
+            </li>
+            <li class="card__item">important:
+              <input class="important" type="checkbox" name="important">
+            </li>
+            <li class="card__item">note:
+              <input class="note" type="text" name="note">
+            </li>
+            <li class="card__item">
+              <button class="submit" type="submit">submit</button>
+            </li>
+          </ul>
+        </form>
+      </li>
+
+    </ul>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
