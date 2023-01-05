@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  background-color: rgb(11, 199, 11, 0.85);
+}
+
+.app {
+  margin: 0 auto;
+  padding: 15px 30px;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.app__title {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  font-size: 40px;
+}
+
+.app__description {
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+.app__area {
+  position: relative;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.app__garbage {
+  position: absolute;
+  cursor: pointer;
+  height: 16%;
+}
+
+.garbage1 {
+  top: 26px;
+  left: 129px;
+}
+
+.garbage2 {
+  top: 31px;
+  left: 546px;
+}
+
+.garbage3 {
+  top: 28px;
+  left: 957px;
+}
+
+.garbage4 {
+  top: 211px;
+  left: 35px;
+}
+
+.garbage5 {
+  top: 188px;
+  left: 412px;
+}
+
+.garbage6 {
+  top: 380px;
+  left: 181px;
+}
+
+.garbage7 {
+  top: 354px;
+  left: 598px;
+}
+
+.app__garbage-can,
+.app__garbage-can-open {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  height: 60%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
