@@ -5,12 +5,15 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background: linear-gradient(to right, #1e1946, #4b458b, #52527c);
   font-family: monospace, sans-serif;
 }
 
 .calc {
-  margin: 20px auto;
   padding: 40px 30px;
   width: 400px;
   border-radius: 8px;
