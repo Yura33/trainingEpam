@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: url("./img/background.jpg") no-repeat center / cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1360px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  margin: 40px 0;
+}
+
+.title {
+  padding: 18px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 48px;
+  line-height: 1;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.subtitle {
+  padding-left: 30px;
+  color: #fff;
+}
+
+.promotion {
+  margin-bottom: 30px;
+}
+
+.promotion__container {
+  padding: 25px 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.promotion__subtitle {
+  margin-bottom: 15px;
+  padding-left: 50px;
+  font-size: 38px;
+}
+
+.promotion__description {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.promotion__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.promotion__item {
+  margin: 10px 15px;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.promotion__discount {
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+}
+
+.content__container {
+  position: relative;
+  display: flex;
+}
+
+.content__constructor-wrapper {
+  position: sticky;
+  top: 25px;
+  align-self: flex-start;
+}
+
+.current-pizza {
+  position: relative;
+  height: 370px;
+}
+
+.current-pizza-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.dough {
+  background-image: url("./img/ingredients/dough.png");
+  display: block;
+}
+
+.tomato {
+  background-image: url("./img/toppings/tomato.png");
+}
+
+.garlic {
+  background-image: url("./img/toppings/garlic.png");
+}
+
+.cheese {
+  background-image: url("./img/toppings/cheese.png");
+}
+
+.caesar {
+  background-image: url("./img/toppings/caesar.png");
+}
+
+.bacon {
+  background-image: url("./img/toppings/bacon.png");
+}
+
+.ham {
+  background-image: url("./img/toppings/ham.png");
+}
+
+.salami {
+  background-image: url("./img/toppings/salami.png");
+}
+
+.chicken {
+  background-image: url("./img/toppings/chicken.png");
+}
+
+.olive {
+  background-image: url("./img/toppings/olive.png");
+}
+
+.black-olive {
+  background-image: url("./img/toppings/black-olive.png");
+}
+
+.fresh-tomato {
+  background-image: url("./img/toppings/fresh-tomato.png");
+}
+
+.pineapple {
+  background-image: url("./img/toppings/pineapple.png");
+}
+
+.bulgarian-pepper {
+  background-image: url("./img/toppings/bulgarian-pepper.png");
+}
+
+.pickled-cucumber {
+  background-image: url("./img/toppings/pickled-cucumber.png");
+}
+
+.jalapeno-pepper {
+  background-image: url("./img/toppings/jalapeno-pepper.png");
+}
+
+.champignons {
+  background-image: url("./img/toppings/champignons.png");
+}
+
+.active {
+  display: block;
+}
+
+.content__constructor-result-all {
+  margin-top: 10px;
+  padding: 8px;
+  width: 375px;
+  border-radius: 7px;
+  font-weight: 600;
+  line-height: 1.3;
+  background-color: #fff;
+  box-shadow: 0 0 15px #000;
+}
+
+.content__constructor-result-all span {
+  font-weight: 500;
+}
+
+.content__creator-pizza {
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.form__fieldset {
+  margin-bottom: 25px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.form__inner-label-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__item {
+  flex: 0 1 25%;
+  padding: 10px;
+}
+
+.form__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  min-width: 180px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+
+.form__card-img {
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.form__card-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form__top-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.form__top-layer:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.form__top-layer.active {
+  box-shadow: 0px 0px 16px #fff;
+  border: 4px solid rgb(0, 128, 0);
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 28px;
+  width: 28px;
+}
+
+.checkmark::after {
+  content: "\2714";
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+  line-height: 1;
+  font-size: 28px;
+  color: rgb(0, 128, 0);
+}
+
+.form__top-layer.active ~ .checkmark::after {
+  display: block;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.form__btn-submit {
+  padding: 15px 30px;
+  margin-left: auto;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.form__btn-submit:hover {
+  background-color: rgb(0, 156, 0);
+}
+
+.form__btn-submit:active {
+  background-color: rgba(1, 172, 1, 0.7);
+}
+
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.modal-window__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 35px 20px 20px;
+  width: 320px;
+  height: 170px;
+  border: 2px solid rgb(0, 128, 0);
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 15px rgba(250, 250, 250, 0.2);
+}
+
+.modal-window__content.error {
+  border-color: rgb(171, 35, 25);
+}
+
+.modal-window__description {
+  margin-bottom: 20px;
+}
+
+.modal-window__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+}
+
+.modal-window__btn:hover {
+  background-color: rgb(0, 128, 0, 0.8);
+}
+
+.modal-window__btn:active {
+  background-color: rgb(0, 128, 0, 0.9);
+}
+
+.modal-window__btn.error {
+  background-color: rgb(171, 35, 25);
+}
+
+.modal-window__btn.error:hover {
+  background-color: rgba(171, 35, 25, 0.8);
+}
+
+.modal-window__btn.error:active {
+  background-color: rgba(171, 35, 25, 0.9);
+}
