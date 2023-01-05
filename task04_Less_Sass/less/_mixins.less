@@ -1,0 +1,52 @@
+// main: style.less
+
+@import '_variables';
+
+
+.font(@size: 16px, @weight: 400, @color: @colorDarkText, @line-height: 1.5) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: @size;
+    font-weight: @weight;
+    color: @color;
+    line-height: @line-height;
+}
+
+.subtitle() {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: @colorTitle;
+    text-transform: uppercase;
+}
+
+.btn(@size, @weight, @color) {
+    .font(@size, @weight, @color);
+    & when(@color = @colorLightText) {
+        background-color: @colorBlue;
+        &:hover {
+            background-color: lighten(@colorBlue, 5%);
+        }
+    } 
+    & when(@color = @colorBlue) {
+        background-color: @colorLightText;
+        &:hover {
+            color: @colorLightText;
+            background-color: @colorBlue;
+        }
+    }
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition-property: color, background-color;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+.for(@list, @i: 1) when (@i <= length(@list)) {
+    @color: extract(@list, @i);
+    &:nth-child(@{i}) {
+        background-color: @color;
+    }
+    .for(@list, @i + 1);
+}

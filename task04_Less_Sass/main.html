@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Bike</title>
+    <link rel="stylesheet" href="less/style.css">
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="less.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header" vocab="https://schema.org/" typeof="Organization">
+        <div class="container header__container">
+            <!-- link to the home page -->
+            <a href="main.html" class="header__logo-link" title="rental bike link" property="url">
+                <img src="img/logo.png" alt="bike" class="header__logo-img" property="logo">
+            </a>
+            <h1 class="header__title" property="name">rental <span class="header__title-span">bike</span></h1>
+        </div>
+    </header>
+    <!-- main navigation -->
+    <nav class="menu">
+        <ul class="menu__list" vocab ="https://schema.org/" typeof ="BreadcrumbList">
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the home page -->
+                <a href="#" class="menu__link active" property="item" typeof="WebPage">
+                    <span property="name">home</span>
+                    <meta property="position" content="1">
+                </a>
+            </li>
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the the table page -->
+                <a href="table.html" class="menu__link" property="item" typeof="WebPage">
+                    <span property="name">table</span>
+                    <meta property="position" content="2">
+                </a>
+            </li>
+            <li class="menu__item" property="itemListElement" typeof="ListItem">
+                <!-- link to the about page -->
+                <a href="about.html" class="menu__link" property="item" typeof="WebPage">
+                    <span property="name">about</span>
+                    <meta property="position" content="3">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main class="main">
+        <!-- home content -->
+        <section class="container content home">
+            <h2 class="home__subtitle">home</h2>                
+            <p class="home__description"><i>&quot;Enjoy the cities and local surroundings in a healthy and environmentally friendly way&quot;</i>. When you ride a bike, you can enjoy the fresh air, exercise and see the sights at your own pace. On our <a href="#"><em><strong>map</strong></em></a> there are all possible <b>places</b> where you can rent a bike or join a <u>guided bike tour</u>.</p>
+            <!-- link to the the table page -->
+            <a href="table.html" class="home__link">book a bike</a>
+            <!-- block our advantages -->
+            <ul class="home__list">
+                <li class="home__item">
+                    <h3 class="home__item-title">Best bikes</h3>
+                    <span class="home__item-icon icon-settings"></span>
+                    <p>All our rental bikes are made by hand in Germany</p>
+                </li>
+                <li class="home__item">
+                    <h3 class="home__item-title">Around the clock</h3>
+                    <span class="home__item-icon icon-clock"></span>
+                    <p>At any time of the day you can enjoy the ride</p>
+                </li>
+                <li class="home__item">
+                    <h3 class="home__item-title">Hop-on&#47;Drop off</h3>
+                    <span class="home__item-icon icon-marker"></span>
+                    <p>Pick up or leave your bike anywhere</p>
+                </li>
+            </ul>
+        </section>
+        <!-- article news -->
+        <article class="news">
+            <div class="container content news__container">
+                <h2 class="news__subtitle">News</h2>
+                <!-- list news -->
+                <ul class="news__list">
+                    <li class="news__item">
+                        <img class="news__item-img" src="img/news_img_1.jpg" alt="15 minutes of intense cycling improves memory">
+                        <h3 class="news__item-title">15 minutes of intense cycling improves memory</h3>
+                        <p class="news__description">According to the results of the study, just 15 minutes of high-intensity cycling improves...</p>
+                        <a href="#" class="news__link">read more</a>
+                    </li>
+                    <li class="news__item">
+                        <img class="news__item-img" src="img/news_img_2.jpg" alt="7 cities in the world where cyclists are most taken care of">
+                        <h3 class="news__item-title">7 cities in the world where cyclists are most taken care of</h3>
+                        <p class="news__description">From bike paths in Copenhagen (Denmark) to solar-powered bike rental in Kaohsiung (Taiwan)...</p>
+                        <a href="#" class="news__link">read more</a>
+                    </li>
+                    <li class="news__item">
+                        <img class="news__item-img" src="img/news_img_3.jpg" alt="Necessary things on a bike trip">
+                        <h3 class="news__item-title">6 things you really need on a bike ride</h3>
+                        <p class="news__description">Sometimes there are situations of punctures or breakdowns on the road, then you may need it...</p>
+                        <a href="#" class="news__link">read more</a>
+                    </li>
+                    <li class="news__item">
+                        <img class="news__item-img" src="img/news_img_4.jpg" alt="Top of the best bikes">
+                        <h3 class="news__item-title">Which bike is better?</h3>
+                        <p class="news__description">Rating of the best bicycles according to the 2021 version in the price &#47; quality ratio...</p>
+                        <a href="#" class="news__link">read more</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <!-- footer -->
+    <footer class="footer" vocab="https://schema.org/" typeof ="WPFooter">
+        <div class="container">
+            <p class="footer__text" property="copyrightHolder">&copy; <span class="footer__date"></span> | Kavaliou Yury | v0.9b</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
